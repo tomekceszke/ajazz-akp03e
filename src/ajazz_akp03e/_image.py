@@ -41,6 +41,7 @@ def prepare_key_image(
         return image
 
     try:
+        img: Image.Image
         if isinstance(image, (str, Path)):
             img = Image.open(image)
         elif isinstance(image, Image.Image):

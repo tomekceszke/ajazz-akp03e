@@ -54,6 +54,10 @@ strict = true
 packages = ["ajazz_akp03e"]
 mypy_path = "src"
 
+[[tool.mypy.overrides]]
+module = "hid"
+ignore_missing_imports = true
+
 [tool.ruff]
 target-version = "py311"
 src = ["src", "tests"]
